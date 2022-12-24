@@ -5,23 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/appbackground_65_nature_outdoors"
-    android:clickable="true"
-    tools:context=".MainActivity">
-
+    tools:context=".ButtonChallenge">
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="243dp"
-        android:layout_height="81dp"
+        android:layout_width="245dp"
+        android:layout_height="224dp"
         android:layout_gravity="center"
-        android:onClick="Start_game"
-        android:text="Start"
+        android:onClick="clickCounter"
+        android:text="Press me as much as possible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.799"
+        app:layout_constraintVertical_bias="0.5"
         tools:ignore="MissingConstraints" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
