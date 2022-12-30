@@ -8,7 +8,7 @@ import android.widget.Button
 import android.widget.TextView
 
 class MathChallenge : AppCompatActivity() {
-    var counter_for_right_answers=0
+    private var counter_for_right_answers=0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,6 +19,10 @@ class MathChallenge : AppCompatActivity() {
         val timer = object: CountDownTimer(15000, 1000) {
             override fun onTick(millisUntilFinished: Long) {
                 println("$time_in_sec sec")
+
+                val timeView: TextView = findViewById(R.id.timetView3) as TextView
+                timeView.text="Time left: $time_in_sec"
+
                 time_in_sec--
             }
 
@@ -77,12 +81,20 @@ class MathChallenge : AppCompatActivity() {
         button_1.setOnClickListener {
             if (right_button==1) counter_for_right_answers++
             println(counter_for_right_answers)
+
+            val scoreView: TextView = findViewById(R.id.scoreView3) as TextView
+            scoreView.text="Score: $counter_for_right_answers"
+
             game()
         }
 
         button_2.setOnClickListener {
             if (right_button==2) counter_for_right_answers++
             println(counter_for_right_answers)
+
+            val scoreView: TextView = findViewById(R.id.scoreView3) as TextView
+            scoreView.text="Score: $counter_for_right_answers"
+
             game()
         }
     }

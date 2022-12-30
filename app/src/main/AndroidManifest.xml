@@ -13,6 +13,34 @@
         android:theme="@style/Theme.KotlinGame"
         tools:targetApi="31">
         <activity
+            android:name=".LogoChallenge"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".GussTheCityChallenge"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".TapTheNumChallenge"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".pacmanCallenge"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".flagChallenge"
             android:exported="false">
             <meta-data
