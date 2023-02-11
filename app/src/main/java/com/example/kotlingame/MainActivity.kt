@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun Start_game(view: View) {
-        val intent = Intent(this@MainActivity, TapTheNumChallenge::class.java)
+        val intent = Intent(this@MainActivity, DestinationsChallenge::class.java)
         startActivity(intent)
     }
 

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">kotlinGame</string>
+    <string name="title_activity_destinations_challenge">DestinationsChallenge</string>
 </resources>

@@ -35,7 +35,7 @@ class LogoChallenge : AppCompatActivity() {
 
             override fun onFinish() {
                 println("Time is up with $counter_for_right_answers points")
-                val intent = Intent(this@LogoChallenge, MainActivity::class.java)
+                val intent = Intent(this@LogoChallenge, DestinationsChallenge::class.java)
                 startActivity(intent)
             }
         }
